@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<style>
-  .banner {
-    width: 100%;
-    height: auto; /* 画像の比率を保ったまま拡大 */
-    display: block; /* 余計な余白を消す */
-  }
-</style>
-
-<body>
-  <header>
-    <img src="images/banner.JPG" alt="サイトのバナー" class="banner">
-  </header>
-</body>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>心盗夜　グッズ計算</title>
   <style>
+    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     body {
       font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
       margin: 0;
@@ -100,34 +93,37 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="images/banner.JPG" alt="サイトのバナー" class="banner">
+  </header>
+
   <h1>心盗夜　グッズ計算</h1>
   <div id="goods-list"></div>
   <div id="total">合計: 0 円</div>
 
   <script>
     const imageUrls = [
-      "IMG_001.JPG”,
-      “IMG_001.JPG”,
-      “IMG_002.JPG”,
-      “IMG_003.JPG”,
-      “IMG_004.JPG”,
-      “IMG_005.JPG”,
-      “IMG_006.JPG”,
-      “IMG_007.JPG”,
-      “IMG_008.JPG”,
-      “IMG_009.JPG”,
-      “IMG_0010.JPG”,
-      “IMG_0011.JPG”,
-      “IMG_0012.JPG”,
-      “IMG_0013.JPG”,
-      “IMG_0014.JPG”,
-      “IMG_0015.JPG”,
-      “IMG_0016.JPG”,
-      “IMG_0017.JPG”,
-      “IMG_0018.JPG”,
-      “IMG_0019.JPG”,
-      “IMG_0020.JPG”,
-      “IMG_0021.JPG”,
+      "images/IMG_001.JPG",
+      "images/IMG_002.JPG",
+      "images/IMG_003.JPG",
+      "images/IMG_004.JPG",
+      "images/IMG_005.JPG",
+      "images/IMG_006.JPG",
+      "images/IMG_007.JPG",
+      "images/IMG_008.JPG",
+      "images/IMG_009.JPG",
+      "images/IMG_010.JPG",
+      "images/IMG_011.JPG",
+      "images/IMG_012.JPG",
+      "images/IMG_013.JPG",
+      "images/IMG_014.JPG",
+      "images/IMG_015.JPG",
+      "images/IMG_016.JPG",
+      "images/IMG_017.JPG",
+      "images/IMG_018.JPG",
+      "images/IMG_019.JPG",
+      "images/IMG_020.JPG",
+      "images/IMG_021.JPG"
     ];
 
     const goods = [
@@ -145,7 +141,7 @@
       { name: "クリアファイル3枚セット", price: 1200 },
       { name: "レコードラバーコースター A", price: 1200 },
       { name: "レコードラバーコースター B", price: 1200 },
-      { name: "レコードラバーコースター C, price: 1200 },
+      { name: "レコードラバーコースター C", price: 1200 },
       { name: "トレカ付きカードポーチ ランダム3種", price: 1200 },
       { name: "アクリルスタンド A ヨンファ", price: 2300 },
       { name: "アクリルスタンド B ミニョク", price: 2300 },
