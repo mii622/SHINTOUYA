@@ -1,109 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>心盗夜　グッズ計算</title>
+  <title>グッズ計算</title>
   <style>
-    /* バナー */
-    .banner {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
     body {
-      font-family: <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom right, #f9f9f9, #ececec);
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #f8f8f8;
       color: #333;
     }
-
     h1 {
       text-align: center;
-      font-size: 2rem;
-      margin: 30px 0 20px;
-      color: #222;
     }
-
-    /* 🔹 グリッドで2列（スマホでは1列） */
-    #goods-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      padding: 20px 30px 40px;
-      max-width: 1000px;
-      margin: 0 auto;
-      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-
-    /* 🔹 カード */
-.item {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 300px;
-}
+    .item img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 4px;
     }
-
-    .item:hover {
-      transform: translateY(-4px);
-    }
-
-.item img {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* 1:1の比率で高さ自動調整 */
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 10px;
-}
     .item-name {
-      font-weight: bold;
-      font-size: 1rem;
-      margin: 8px 0;
-      color: #333;
+      flex: 1;
     }
-
     .item-price {
-      color: #555;
-      margin-bottom: 8px;
-      font-size: 0.95rem;
+      width: 80px;
+      text-align: right;
     }
-
     .item-qty {
-      width: 70px;
-      text-align: center;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      padding: 4px;
+      width: 60px;
+      margin-left: 10px;
     }
-
-    /* 🔹 合計欄 */
     #total {
-      margin: 40px auto;
+      margin-top: 20px;
+      font-size: 1.2em;
       text-align: center;
-      font-size: 1.5em;
       font-weight: bold;
-      background: #fff;
-      border: 2px solid #ccc;
-      border-radius: 12px;
-      padding: 20px;
-      max-width: 400px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+  </style>
 
   </style>
 </head>
