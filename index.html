@@ -27,13 +27,39 @@
     }
 
   #goods-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  max-width: 600px; /* 幅はお好みで調整 */
-  margin: 0 auto;
-}
+
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .item img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+    .item-name {
+      flex: 1;
+    }
+    .item-price {
+      width: 80px;
+      text-align: right;
+    }
+    .item-qty {
+      width: 60px;
+      margin-left: 10px;
+    }
+    #total {
+      margin-top: 20px;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: bold;
+    }
 
     .item {
       background: #fff;
